@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ppbmod",
+	"version": "${version}",
+	"name": "Pushpinbird Mod",
+	"description": "This mod is for Twitch streamer Pushpinbird.",
+	"authors": [
+		"Legendzary"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ppbmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.legendzary.ppbmod.PushpinbirdMod"
+		],
+		"fabric-datagen": [
+			"net.legendzary.ppbmod.PushpinbirdModDataGenerator"
+		]
+	},
+	"mixins": [
+		"ppbmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
