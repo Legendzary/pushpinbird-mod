@@ -13,14 +13,14 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup PUSHPINBIRD_MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(PushpinbirdMod.MOD_ID, "pushpinbird_mod"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PUSHPIN))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PUSHPIBALD))
                     .displayName(Text.translatable("itemgroup.ppbmod.item.group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PUSHPIBALD);
-                        entries.add(ModItems.PUSHPIN);
                         entries.add(ModBlocks.PUSHPIBALD_BLOCK);
                         entries.add(ModBlocks.PUSHPIBALD_ORE_STONE);
                         entries.add(ModBlocks.PUSHPIBALD_ORE_DEEPSLATE);
+                        entries.add(ModItems.PUSHPIN);
 
                     }).build());
 

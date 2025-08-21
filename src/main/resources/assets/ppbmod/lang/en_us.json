@@ -1,10 +1,12 @@
 {
-  "item.ppbmod.pushpin": "Pushpin",
   "item.ppbmod.pushpibald": "pushpiBALD",
+  "item.ppbmod.pushpin": "Pushpin",
 
   "block.ppbmod.pushpibald_block": "Block of pushpiBALD",
   "block.ppbmod.pushpibald_ore_stone": "pushpiBALD Ore",
   "block.ppbmod.pushpibald_ore_deepslate": "Deepslate pushpiBALD Ore",
 
-  "itemgroup.ppbmod.item.group": "Pushpinbird Mod"
+  "itemgroup.ppbmod.item.group": "Pushpinbird Mod",
+
+  "entity.ppbmod.pushpin": "Pushpin"
 }
