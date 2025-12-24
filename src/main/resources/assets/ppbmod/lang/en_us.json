@@ -1,15 +1,24 @@
 {
   "item.ppbmod.pushpibald": "pushpiBALD",
-  "item.ppbmod.pushpin": "Pushpin",
+
+  "item.ppbmod.chat_mascot": "Chat",
+
   "item.ppbmod.pushpibald_sword": "pushpiBALD Sword",
   "item.ppbmod.pushpibald_pickaxe": "pushpiBALD Pickaxe",
   "item.ppbmod.pushpibald_axe": "pushpiBALD Axe",
   "item.ppbmod.pushpibald_shovel": "pushpiBALD Shovel",
   "item.ppbmod.pushpibald_hoe": "pushpiBALD Hoe",
 
+  "item.ppbmod.pushpibald_helmet": "pushpiBALD Helmet",
+  "item.ppbmod.pushpibald_chestplate": "pushpiBALD Chestplate",
+  "item.ppbmod.pushpibald_leggings": "pushpiBALD Leggings",
+  "item.ppbmod.pushpibald_boots": "pushpiBALD Boots",
+
+  "item.ppbmod.pushpin": "Pushpin",
+
   "block.ppbmod.pushpibald_block": "Block of pushpiBALD",
-  "block.ppbmod.pushpibald_ore_stone": "pushpiBALD Ore",
-  "block.ppbmod.pushpibald_ore_deepslate": "Deepslate pushpiBALD Ore",
+  "block.ppbmod.pushpibald_ore": "pushpiBALD Ore",
+  "block.ppbmod.pushpibald_deepslate_ore": "Deepslate pushpiBALD Ore",
 
   "itemgroup.ppbmod.item.group": "Pushpinbird Mod",
 

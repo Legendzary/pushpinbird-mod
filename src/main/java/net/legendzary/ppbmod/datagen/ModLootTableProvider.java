@@ -28,8 +28,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.PUSHPIBALD_BLOCK);
 
-        addDrop(ModBlocks.PUSHPIBALD_ORE_STONE, oreDrops(ModBlocks.PUSHPIBALD_ORE_STONE, ModItems.PUSHPIBALD));
-        addDrop(ModBlocks.PUSHPIBALD_ORE_DEEPSLATE, oreDrops(ModBlocks.PUSHPIBALD_ORE_DEEPSLATE, ModItems.PUSHPIBALD));
+        addDrop(ModBlocks.PUSHPIBALD_ORE, oreDrops(ModBlocks.PUSHPIBALD_ORE, ModItems.PUSHPIBALD));
+        addDrop(ModBlocks.PUSHPIBALD_DEEPSLATE_ORE, oreDrops(ModBlocks.PUSHPIBALD_DEEPSLATE_ORE, ModItems.PUSHPIBALD));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

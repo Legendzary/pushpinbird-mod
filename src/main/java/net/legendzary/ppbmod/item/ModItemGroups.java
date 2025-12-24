@@ -16,16 +16,26 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PUSHPIBALD))
                     .displayName(Text.translatable("itemgroup.ppbmod.item.group"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.PUSHPIN);
+
+                        entries.add(ModItems.CHAT_MASCOT);
+
                         entries.add(ModItems.PUSHPIBALD);
                         entries.add(ModBlocks.PUSHPIBALD_BLOCK);
-                        entries.add(ModBlocks.PUSHPIBALD_ORE_STONE);
-                        entries.add(ModBlocks.PUSHPIBALD_ORE_DEEPSLATE);
-                        entries.add(ModItems.PUSHPIN);
+
+                        entries.add(ModBlocks.PUSHPIBALD_ORE);
+                        entries.add(ModBlocks.PUSHPIBALD_DEEPSLATE_ORE);
+
                         entries.add(ModItems.PUSHPIBALD_SWORD);
                         entries.add(ModItems.PUSHPIBALD_PICKAXE);
                         entries.add(ModItems.PUSHPIBALD_AXE);
                         entries.add(ModItems.PUSHPIBALD_SHOVEL);
                         entries.add(ModItems.PUSHPIBALD_HOE);
+
+                        entries.add(ModItems.PUSHPIBALD_HELMET);
+                        entries.add(ModItems.PUSHPIBALD_CHESTPLATE);
+                        entries.add(ModItems.PUSHPIBALD_LEGGINGS);
+                        entries.add(ModItems.PUSHPIBALD_BOOTS);
 
                     }).build());
 

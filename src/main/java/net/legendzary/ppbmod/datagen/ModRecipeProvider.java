@@ -22,7 +22,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        List<ItemConvertible> PUSHPIBALD_SMELTABLES = List.of(ModBlocks.PUSHPIBALD_ORE_STONE, ModBlocks.PUSHPIBALD_ORE_DEEPSLATE);
+        List<ItemConvertible> PUSHPIBALD_SMELTABLES = List.of(ModBlocks.PUSHPIBALD_ORE, ModBlocks.PUSHPIBALD_DEEPSLATE_ORE);
 
         offerSmelting(exporter, PUSHPIBALD_SMELTABLES, RecipeCategory.MISC, ModItems.PUSHPIBALD, 0.25f, 200, "PUSHPIBALD");
         offerBlasting(exporter, PUSHPIBALD_SMELTABLES, RecipeCategory.MISC, ModItems.PUSHPIBALD, 0.25f, 100, "PUSHPIBALD");
@@ -74,10 +74,47 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PUSHPIBALD), conditionsFromItem(ModItems.PUSHPIBALD))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PUSHPIBALD_HELMET)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .input('#', ModItems.PUSHPIBALD)
+                .criterion(hasItem(ModItems.PUSHPIBALD), conditionsFromItem(ModItems.PUSHPIBALD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PUSHPIBALD_CHESTPLATE)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.PUSHPIBALD)
+                .criterion(hasItem(ModItems.PUSHPIBALD), conditionsFromItem(ModItems.PUSHPIBALD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PUSHPIBALD_LEGGINGS)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.PUSHPIBALD)
+                .criterion(hasItem(ModItems.PUSHPIBALD), conditionsFromItem(ModItems.PUSHPIBALD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PUSHPIBALD_BOOTS)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.PUSHPIBALD)
+                .criterion(hasItem(ModItems.PUSHPIBALD), conditionsFromItem(ModItems.PUSHPIBALD))
+                .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PUSHPIN, 4)
             .input(Items.RED_DYE)
             .input(Items.IRON_INGOT)
             .criterion(hasItem(ModBlocks.PUSHPIBALD_BLOCK), conditionsFromItem(ModBlocks.PUSHPIBALD_BLOCK))
             .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHAT_MASCOT, 1)
+                .input(Items.COOKED_CHICKEN)
+                .input(Items.GREEN_DYE)
+                .criterion(hasItem(Items.COOKED_CHICKEN), conditionsFromItem(Items.COOKED_CHICKEN))
+                .offerTo(exporter);
     }
 }
