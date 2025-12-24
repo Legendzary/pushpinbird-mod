@@ -6,6 +6,7 @@ import net.legendzary.ppbmod.block.ModBlocks;
 import net.legendzary.ppbmod.entity.ModEntities;
 import net.legendzary.ppbmod.item.ModItemGroups;
 import net.legendzary.ppbmod.item.ModItems;
+import net.legendzary.ppbmod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +20,6 @@ public class PushpinbirdMod implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModItemGroups.registerItemGroups();
         ModEntities.registerModEntities();
+        ModWorldGeneration.generateModWorldGen();
 	}
 }

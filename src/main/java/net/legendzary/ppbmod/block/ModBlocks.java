@@ -19,11 +19,11 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
 
-    public static final Block PUSHPIBALD_ORE_STONE = registerBlock("pushpibald_ore_stone",
+    public static final Block PUSHPIBALD_ORE = registerBlock("pushpibald_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3f).requiresTool()));
 
-    public static final Block PUSHPIBALD_ORE_DEEPSLATE = registerBlock("pushpibald_ore_deepslate",
+    public static final Block PUSHPIBALD_DEEPSLATE_ORE = registerBlock("pushpibald_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
@@ -45,8 +45,8 @@ public class ModBlocks {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.PUSHPIBALD_ORE_STONE);
-            fabricItemGroupEntries.add(ModBlocks.PUSHPIBALD_ORE_DEEPSLATE);
+            fabricItemGroupEntries.add(ModBlocks.PUSHPIBALD_ORE);
+            fabricItemGroupEntries.add(ModBlocks.PUSHPIBALD_DEEPSLATE_ORE);
         });
     }
 }
