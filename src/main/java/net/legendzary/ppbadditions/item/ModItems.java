@@ -59,13 +59,17 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT). register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PUSHPIN);
+            fabricItemGroupEntries.add(PUSHPIBALD_SWORD);
+            fabricItemGroupEntries.add(PUSHPIBALD_HELMET);
+            fabricItemGroupEntries.add(PUSHPIBALD_CHESTPLATE);
+            fabricItemGroupEntries.add(PUSHPIBALD_LEGGINGS);
+            fabricItemGroupEntries.add(PUSHPIBALD_BOOTS);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS). register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(PUSHPIBALD_SWORD);
+            fabricItemGroupEntries.add(PUSHPIBALD_SHOVEL);
             fabricItemGroupEntries.add(PUSHPIBALD_PICKAXE);
             fabricItemGroupEntries.add(PUSHPIBALD_AXE);
-            fabricItemGroupEntries.add(PUSHPIBALD_SHOVEL);
             fabricItemGroupEntries.add(PUSHPIBALD_HOE);
         });
     }
